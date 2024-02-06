@@ -1,0 +1,139 @@
+Last login: Tue Feb  6 12:34:05 on ttys000
+ahuff@NISD21612 ~ % cd Documents
+ahuff@NISD21612 Documents % cd Projects
+ahuff@NISD21612 Projects % cd MyRepo1
+ahuff@NISD21612 MyRepo1 % ls
+README.md			Terminal Saved Output.txt
+ahuff@NISD21612 MyRepo1 % echo "# MyRepo1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/4c0ding/MyRepo1.git
+git push -u origin main
+Reinitialized existing Git repository in /Users/ahuff/Documents/Projects/MyRepo1/.git/
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ahuff@NISD21612.(none)')
+error: remote origin already exists.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 224 bytes | 224.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/4c0ding/MyRepo1.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'.
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	Terminal Saved Output.txt
+
+ahuff@NISD21612 MyRepo1 % git add Terminal Saved Output.txt
+fatal: pathspec 'Terminal' did not match any files
+ahuff@NISD21612 MyRepo1 % git add "Terminal Saved Output.txt"
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   Terminal Saved Output.txt
+
+ahuff@NISD21612 MyRepo1 % touch index.html
+ahuff@NISD21612 MyRepo1 % ls
+README.md			index.html
+Terminal Saved Output.txt
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   Terminal Saved Output.txt
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	index.html
+
+ahuff@NISD21612 MyRepo1 % git add . 
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   Terminal Saved Output.txt
+	new file:   index.html
+
+ahuff@NISD21612 MyRepo1 % git commit -m "your message"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ahuff@NISD21612.(none)')
+ahuff@NISD21612 MyRepo1 % git config --global user.email "angelika.therese@gmail.com"
+ahuff@NISD21612 MyRepo1 % git config --global user.name "Angelika Huff"
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+	modified:   README.md
+	new file:   Terminal Saved Output.txt
+	new file:   index.html
+
+ahuff@NISD21612 MyRepo1 % git commit -m "your message"
+[main cb4ef71] your message
+ 3 files changed, 74 insertions(+)
+ create mode 100644 Terminal Saved Output.txt
+ create mode 100644 index.html
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+nothing to commit, working tree clean
+ahuff@NISD21612 MyRepo1 % git push
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (5/5), 1.26 KiB | 1.26 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/4c0ding/MyRepo1.git
+   a1da886..cb4ef71  main -> main
+ahuff@NISD21612 MyRepo1 % git status
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+ahuff@NISD21612 MyRepo1 % 
