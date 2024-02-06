@@ -1,0 +1,73 @@
+Last login: Wed Jan 31 18:20:49 on ttys000
+ahuff@NISD21612 ~ % cd Documents
+ahuff@NISD21612 Documents % cd Projects
+ahuff@NISD21612 Projects % mkdir MyRepo1
+ahuff@NISD21612 Projects % cd MyRepo1
+ahuff@NISD21612 MyRepo1 % echo "# MyRepo1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/4c0ding/MyRepo1.git
+git push -u origin main
+Initialized empty Git repository in /Users/ahuff/Documents/Projects/MyRepo1/.git/
+[main (root-commit) a1da886] first commit
+ Committer: Angelika Huff <ahuff@nisd21612.lan>
+Your name and email address were configured automatically based
+on your username and hostname. Please check that they are accurate.
+You can suppress this message by setting them explicitly. Run the
+following command and follow the instructions in your editor to edit
+your configuration file:
+
+    git config --global --edit
+
+After doing this, you may fix the identity used for this commit with:
+
+    git commit --amend --reset-author
+
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+Username for 'https://github.com': echo "# MyRepo1" >> README.md
+git init
+git add README.md
+git commit -m "first commit"
+git branch -M main
+git remote add origin https://github.com/4c0ding/MyRepo1.git
+git push -u origin mainPassword for 'https://echo "# MyRepo1" >> README.md@github.com': 
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/en/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/4c0ding/MyRepo1.git/'
+ahuff@NISD21612 MyRepo1 % git config --global --edit
+hint: Waiting for your editor to close the file... 
+# This is Git's per-user configuration file.
+[4c0ding]       
+# Please adapt and uncomment the following lines:
+#       name = Angelika Huff
+#       email = angelika.therese@gmail.com
+
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+~                                                                                                         
+-- INSERT --
